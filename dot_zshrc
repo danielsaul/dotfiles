@@ -34,3 +34,10 @@ zplug load
  # l for longform ls
  alias l='ls -lh'
 
+ # vi for neovim
+ alias v=nvim
+
+
+## Environment Variables
+
+export EDITOR="nvim"
