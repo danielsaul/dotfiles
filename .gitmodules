@@ -1,0 +1,3 @@
+[submodule "dot_config/nvim/neon.vim"]
+	path = dot_config/nvim/neon.vim
+	url = git@github.com:danielsaul/neon.vim.git
