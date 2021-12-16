@@ -17,7 +17,7 @@ Plug 'ntpeters/vim-better-whitespace'   " Highlight eol whitespace
 Plug 'Shougo/echodoc.vim'               " Show doc line in status bar
 Plug 'Yggdroot/indentLine'              " Indentation lines for spaces
 
-Plug 'majutsushi/tagbar'    " Tag window
+" Plug 'majutsushi/tagbar'    " Tag window
 Plug 'preservim/nerdtree'  " Show file list
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -32,7 +32,7 @@ Plug 'camspiers/lens.vim'
 " Linting
 " Plug 'neomake/neomake'
 Plug 'w0rp/ale'
-Plug 'uber/prototool', { 'rtp':'vim/prototool' }
+" Plug 'uber/prototool', { 'rtp':'vim/prototool' }
 
 " Coc.nvim - LSP auto-completion etc
 " Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
@@ -50,7 +50,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Testing
-Plug 'janko/vim-test'
+Plug 'vim-test/vim-test'
 
 " Pretty
 Plug 'RRethy/vim-hexokinase', {'do': 'make hexokinase' }  " Colours
@@ -69,7 +69,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'nightsense/snow'
 
 " Git
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'tommcdo/vim-fugitive-blame-ext'
 Plug 'tveskag/nvim-blame-line'
