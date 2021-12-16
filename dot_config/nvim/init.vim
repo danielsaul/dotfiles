@@ -9,6 +9,7 @@ source $HOME/.config/nvim/plug_go.vim
 " source $HOME/.config/nvim/plug_fzf.vim
 source $HOME/.config/nvim/plug_tagbar.vim
 
+source $HOME/.config/nvim/plug_lsp.vim
 source $HOME/.config/nvim/keys.vim
 
 " Colour scheme
@@ -22,7 +23,7 @@ set conceallevel=0
 set complete+=k
 set complete-=t
 "set completeopt=noinsert,noselect,menuone
-set completeopt=menu,preview
+set completeopt=menu,menuone,noselect
 set fillchars+=msgsep:-
 highlight link MsgSeparator MoreMsg
 
