@@ -2,7 +2,7 @@
 "
 let g:ale_linters = {
   \ 'go': ['gofmt', 'golint', 'golangci-lint'],
-  \ 'proto': ['prototool-lint'],
+  \ 'proto': ['buf-lint'],
   \ }
 
 let g:ale_fixers = {

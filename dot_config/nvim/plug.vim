@@ -32,7 +32,7 @@ Plug 'camspiers/lens.vim'
 " Linting
 " Plug 'neomake/neomake'
 Plug 'w0rp/ale'
-" Plug 'uber/prototool', { 'rtp':'vim/prototool' }
+Plug 'bufbuild/vim-buf'
 
 " Coc.nvim - LSP auto-completion etc
 " Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
