@@ -26,7 +26,7 @@ function! ToggleGStatus()
     if buflisted(bufname('.git/index'))
         bd .git/index
     else
-        topleft vertical 70 Gstatus
+        topleft vertical 70 Git
     endif
 endfunction
 command ToggleGStatus :call ToggleGStatus()
