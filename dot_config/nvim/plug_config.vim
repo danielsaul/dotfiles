@@ -26,11 +26,16 @@ function! ToggleGStatus()
     if buflisted(bufname('.git/index'))
         bd .git/index
     else
-        topleft vertical 70 Git
+        topleft vertical Git
     endif
 endfunction
 command ToggleGStatus :call ToggleGStatus()
 nmap <silent> <C-_> :ToggleGStatus<CR>
+
+augroup fugitive_au
+  autocmd!
+  autocmd FileType fugitive setlocal winfixwidth
+augroup END
 
 " Indent Line
 set list lcs=tab:\▏\                    " Standard tab line
@@ -66,3 +71,7 @@ let test#javascript#jest#file_pattern = '\v.(unit|spec|test)\.(js|jsx|coffee|ts|
 let test#project_root = projectroot#guess()
 let test#strategy = "neovim"
 let test#neovim#term_position = "vertical belowright"
+
+" Lens
+" Do not resize these types of 'files' or windows
+let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
