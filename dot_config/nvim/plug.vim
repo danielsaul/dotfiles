@@ -69,9 +69,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'nightsense/snow'
 
 " Git
-" Plug 'airblade/vim-gitgutter'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'lewis6991/gitsigns.nvim'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tommcdo/vim-fugitive-blame-ext'
 Plug 'tveskag/nvim-blame-line'

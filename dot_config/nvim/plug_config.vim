@@ -55,6 +55,8 @@ highlight ExtraWhitespace ctermbg=52 guibg=#5b1a2c
 
 " Git gutter
 let g:gitgutter_override_sign_column_highlight = 0
+let g:gitgutter_sign_added = '│'
+let g:gitgutter_sign_modified = '│'
 
 " vue syntax highlighting is bad.
 autocmd FileType vue syntax sync fromstart

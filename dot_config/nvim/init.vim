@@ -28,3 +28,7 @@ highlight link MsgSeparator MoreMsg
 highlight Comment cterm=italic
 
 highlight NormalFloat cterm=NONE ctermfg=14 ctermbg=0 gui=NONE guifg=#93a1a1 guibg=#222222
+
+highlight GitGutterAdd       guifg=#b0ff5e
+highlight GitGutterChange    guifg=#39aeff
+
