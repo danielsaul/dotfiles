@@ -12,6 +12,7 @@ call plug#begin()
 
 " General
 Plug 'dbakker/vim-projectroot'          " Find project root
+Plug 'suy/vim-context-commentstring'    " Different comment styles in same file
 Plug 'tpope/vim-commentary'             " Comments yay
 Plug 'ntpeters/vim-better-whitespace'   " Highlight eol whitespace
 Plug 'Shougo/echodoc.vim'               " Show doc line in status bar
