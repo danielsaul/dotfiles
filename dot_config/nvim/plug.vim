@@ -53,20 +53,20 @@ Plug 'junegunn/fzf.vim'
 Plug 'janko/vim-test'
 
 " Pretty
-Plug 'RRethy/vim-hexokinase'  " Colours
+Plug 'RRethy/vim-hexokinase', {'do': 'make hexokinase' }  " Colours
 
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Colour schemes
-Plug 'crusoexia/vim-monokai'
+" Plug 'crusoexia/vim-monokai'
 "Plug 'rakr/vim-two-firewatch'
 "Plug 'arcticicestudio/nord-vim'
-Plug 'reedes/vim-colors-pencil'
-Plug 'rakr/vim-two-firewatch'
-Plug 'jacoborus/tender.vim'
-Plug 'nightsense/snow'
+" Plug 'reedes/vim-colors-pencil'
+" Plug 'rakr/vim-two-firewatch'
+" Plug 'jacoborus/tender.vim'
+" Plug 'nightsense/snow'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -112,8 +112,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 
 " Deoplete auto-completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'juliosueiras/vim-terraform-completion'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'juliosueiras/vim-terraform-completion'
 " Plug 'zchee/deoplete-jedi'
 " Plug 'zchee/deoplete-clang'
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
