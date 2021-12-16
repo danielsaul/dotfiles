@@ -6,7 +6,7 @@ source $HOME/.config/nvim/plug_config.vim
 " source $HOME/.config/nvim/plug_deoplete.vim
 source $HOME/.config/nvim/plug_ale.vim
 source $HOME/.config/nvim/plug_go.vim
-source $HOME/.config/nvim/plug_fzf.vim
+" source $HOME/.config/nvim/plug_fzf.vim
 source $HOME/.config/nvim/plug_tagbar.vim
 
 source $HOME/.config/nvim/keys.vim
@@ -14,6 +14,8 @@ source $HOME/.config/nvim/keys.vim
 " Colour scheme
 set rtp+=~/.config/nvim/neon.vim
 colorscheme neon
+
+source $HOME/.config/nvim/plug_telescope.vim
 
 set conceallevel=0
 

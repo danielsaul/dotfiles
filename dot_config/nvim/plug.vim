@@ -49,6 +49,11 @@ Plug 'bufbuild/vim-buf'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
+" Telescope Fuzzy
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
 " Testing
 Plug 'vim-test/vim-test'
 
