@@ -25,4 +25,4 @@ call deoplete#initialize()
 " call deoplete#initialize()
 
 " Disalbe coc for terraform
-autocmd FileType terraform let b:coc_suggest_disable = 1
+" autocmd FileType terraform let b:coc_suggest_disable = 1

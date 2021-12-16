@@ -23,7 +23,7 @@ inoremap <expr> <tab>      pumvisible() ? "\<c-n>" : "\<tab>"
 
 " inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 " inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<c-r>=coc#on_enter()\<CR>\<C-g>u\<CR>"
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " inoremap <expr><tab> pumvisible() ? "\<C-y>" : "\<tab>"
 
@@ -36,16 +36,16 @@ nmap <silent> <M-Right> :tabn<cr>
 
 " Coc LSP keys
 
-nmap gd             <Plug>(coc-definition)
-nmap <C-LeftMouse>  <LeftMouse><Plug>(coc-definition)
+" nmap gd             <Plug>(coc-definition)
+" nmap <C-LeftMouse>  <LeftMouse><Plug>(coc-definition)
 
-nmap gs             <Plug>(coc-implementation)
-nmap gt             <Plug>(coc-type-definition)
-nmap gr             <Plug>(coc-references)
-command Rename      :call CocActionAsync('rename')
+" nmap gs             <Plug>(coc-implementation)
+" nmap gt             <Plug>(coc-type-definition)
+" nmap gr             <Plug>(coc-references)
+" command Rename      :call CocActionAsync('rename')
 
 nmap . <Plug>()
-nnoremap <silent> . :call CocAction('doHover')<CR>
+" nnoremap <silent> . :call CocAction('doHover')<CR>
 
 nnoremap <silent> <leader>f :call PrototoolFormatFix()<CR>
 

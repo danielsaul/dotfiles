@@ -17,8 +17,6 @@ colorscheme neon
 
 set conceallevel=0
 
-autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-
 set complete+=k
 set complete-=t
 "set completeopt=noinsert,noselect,menuone
@@ -27,5 +25,6 @@ set fillchars+=msgsep:-
 highlight link MsgSeparator MoreMsg
 
 
+highlight Comment cterm=italic
+
 highlight NormalFloat cterm=NONE ctermfg=14 ctermbg=0 gui=NONE guifg=#93a1a1 guibg=#222222
-highlight CocFloating cterm=NONE ctermfg=14 ctermbg=0 gui=NONE guifg=#93a1a1 guibg=#222222
