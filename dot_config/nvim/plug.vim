@@ -28,7 +28,8 @@ Plug 'camspiers/lens.vim'
 
 " Linting
 " Plug 'neomake/neomake'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'bufbuild/vim-buf'
 
 " Coc.nvim - LSP auto-completion etc
@@ -59,7 +60,6 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Telescope Fuzzy
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
