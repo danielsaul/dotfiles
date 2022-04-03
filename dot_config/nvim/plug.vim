@@ -1,14 +1,10 @@
 " My plugins
 " Using vim-plug
 
-" Automatically install vim-plug and run PlugInstall if vim-plug not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
 
 call plug#begin()
+
+Plug 'nvim-lua/plenary.nvim'
 
 " General
 Plug 'dbakker/vim-projectroot'          " Find project root
