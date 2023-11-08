@@ -13,6 +13,7 @@ Plug 'tpope/vim-commentary'             " Comments yay
 Plug 'ntpeters/vim-better-whitespace'   " Highlight eol whitespace
 Plug 'Shougo/echodoc.vim'               " Show doc line in status bar
 Plug 'Yggdroot/indentLine'              " Indentation lines for spaces
+Plug 'kosayoda/nvim-lightbulb'          " Show code actions
 
 " Plug 'majutsushi/tagbar'    " Tag window
 Plug 'preservim/nerdtree'  " Show file list

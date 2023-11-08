@@ -47,6 +47,7 @@ nmap <silent> <M-Right> :tabn<cr>
 nmap . <Plug>()
 " nnoremap <silent> . :call CocAction('doHover')<CR>
 
+
 nnoremap <silent> <leader>f :call PrototoolFormatFix()<CR>
 
 nmap <silent> t<C-n> :TestNearest<CR>
@@ -54,3 +55,6 @@ nmap <silent> t<C-f> :TestFile<CR>
 nmap <silent> t<C-s> :TestSuite<CR>
 nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
+
+" LSP
+nnoremap <silent> . <cmd>lua vim.lsp.buf.hover()<CR>

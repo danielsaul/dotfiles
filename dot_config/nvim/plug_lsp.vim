@@ -46,6 +46,11 @@ local cmp_kinds = {
     completion = {
       completeopt = 'menu,menuone,noselect,preview',
     },
+
+    experimental = {
+      ghost_text = true,
+    },
+
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)

@@ -77,3 +77,6 @@ let test#neovim#term_position = "vertical belowright"
 " Lens
 " Do not resize these types of 'files' or windows
 let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
+
+" Light bulb - always update
+autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()

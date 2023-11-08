@@ -40,6 +40,10 @@ zplug load
  # vi for neovim
  alias vi=nvim
 
+ # cd dots
+ alias -g ...="../.."
+ alias -g ....="../../.."
+
 
 ## Environment Variables
 
@@ -54,3 +58,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # PATH
 export PATH="$(yarn global bin):$PATH"
+export PATH=$HOME/go/bin:$PATH

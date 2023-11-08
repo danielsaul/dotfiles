@@ -1,9 +1,10 @@
 "Telescope
 
 " Shortcuts
-nnoremap <C-space> <cmd>Telescope find_files<cr>
+nnoremap <C-space> <cmd>Telescope git_files<cr>
 nnoremap <C-b> <cmd>Telescope buffers<cr>
-nnoremap <C-f> <cmd>Telescope live_grep<cr>
+nnoremap <C-f> <cmd>ProjectRootExe Telescope live_grep<cr>
+nnoremap <C-c> <cmd>Telescope lsp_code_actions<CR>
 
 " Border highlight groups
 highlight TelescopeBorder         guifg=#4a4a4a

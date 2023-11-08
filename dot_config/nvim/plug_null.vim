@@ -51,10 +51,6 @@ local sources = {
   -- github actions
     null_ls.builtins.diagnostics.actionlint,
 
-    null_ls.builtins.formatting.prettier,
-    null_ls.builtins.diagnostics.write_good,
-    null_ls.builtins.code_actions.gitsigns,
-
   -- spag
     null_ls.builtins.diagnostics.proselint,
     null_ls.builtins.code_actions.proselint,
