@@ -43,6 +43,13 @@ let g:indentLine_char = '▏'             " Space line
 let g:indentLine_color_term = 236
 let g:indentLine_color_gui = '#2C2C2C'
 
+" Lualine
+lua << END
+require('lualine').setup {
+	options = { theme = "zenwritten" },
+}
+END
+
 " Airline
 let g:airline_powerline_fonts = 1
 let g:neon_airline = 1

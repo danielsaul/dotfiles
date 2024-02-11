@@ -60,13 +60,13 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 
 " Line numbers
 set number              " Show the line numbers on the left side.
-set numberwidth=5       " Set width of line column
-set relativenumber      " Use relative line numbers
-augroup numbertoggle   " Intelligent relative numbers
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * if (&number) | set relativenumber | endif
-  autocmd BufLeave,FocusLost,InsertEnter   * if (&number) | set norelativenumber | endif
-augroup END
+set numberwidth=4       " Set width of line column
+" set relativenumber      " Use relative line numbers
+" augroup numbertoggle   " Intelligent relative numbers
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave * if (&number) | set relativenumber | endif
+"   autocmd BufLeave,FocusLost,InsertEnter   * if (&number) | set norelativenumber | endif
+" augroup END
 
 
 set clipboard+=unnamedplus  " Link paste buffer to clipboard

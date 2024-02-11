@@ -4,6 +4,10 @@
 
 call plug#begin()
 
+Plug 'savq/melange-nvim'
+Plug 'rktjmp/lush.nvim'
+Plug 'mcchrish/zenbones.nvim'
+
 Plug 'nvim-lua/plenary.nvim'
 
 " General
@@ -71,15 +75,16 @@ Plug 'vim-test/vim-test'
 Plug 'RRethy/vim-hexokinase', {'do': 'make hexokinase' }  " Colours
 
 " Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
 
 " Colour schemes
 " Plug 'crusoexia/vim-monokai'
 "Plug 'rakr/vim-two-firewatch'
 "Plug 'arcticicestudio/nord-vim'
 " Plug 'reedes/vim-colors-pencil'
-" Plug 'rakr/vim-two-firewatch'
+Plug 'rakr/vim-two-firewatch'
 " Plug 'jacoborus/tender.vim'
 " Plug 'nightsense/snow'
 

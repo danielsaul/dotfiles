@@ -16,7 +16,14 @@ source $HOME/.config/nvim/keys.vim
 
 " Colour scheme
 set rtp+=~/.config/nvim/neon.vim
-colorscheme neon
+colorscheme zenwritten
+
+let g:zenbones_lightness = 'bright'
+let g:zenbones_italic_comments = v:false
+let g:zenbones_darken_comments = 50
+let g:zenbones_transparent_background = v:true
+let g:zenwritten_italic_comments = v:false
+let g:zenwritten_transparent_background = v:true
 
 source $HOME/.config/nvim/plug_telescope.vim
 
