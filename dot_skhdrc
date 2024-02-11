@@ -1,12 +1,15 @@
 # Launch terminal
-cmd + alt + ctrl - return           :    osascript ~/.config/iterm2/iterm2_start.scpt
-cmd + alt + ctrl + shift - return   :    osascript ~/.config/iterm2/iterm2_start.scpt; yabai -m window recent --toggle float
+cmd + alt + ctrl - return           :    if ! pgrep -f "Warp"; then open -a Warp; else open warp://action/new_window\?path=~; fi;
+cmd + alt + ctrl + shift - return   :    yabai -m signal --add label=float_next_window_created event=window_created action='yabai -m signal --remove float_next_window_created; yabai -m signal --remove float_next_application_launched; yabai -m window $YABAI_WINDOW_ID --toggle float --grid 5:6:2:1:2:3' ; \
+if ! pgrep -f "Warp"; then open -a Warp; else open warp://action/new_window\?path=~; fi;
+
+#    yabai -m signal --add label=float_next_application_launched event=application_launched action='yabai -m signal --remove float_next_window_created; yabai -m signal --remove float_next_application_launched; yabai -m query --windows | jq -r ".[] | select(.pid == $YABAI_PROCESS_ID).id" | xargs -I{} yabai -m window {} --toggle float --grid 5:6:2:1:2:3;' ; \
 
 # Restart khd
 #cmd + alt + ctrl - escape           :    brew services restart khd
 
 # Lock Screen
-cmd + alt + ctrl - l                :    pmset displaysleepnow
+#cmd + alt + ctrl - l                :    pmset displaysleepnow
 
 # Close Window
 cmd + alt + ctrl - w                :    skhd -k "cmd - w"
@@ -24,8 +27,7 @@ cmd + alt + ctrl - d                :    yabai -m window --toggle zoom-parent
 cmd + alt + ctrl - p                :    yabai -m window --toggle split
 
 # Toggle floating window
-cmd + alt + ctrl - s                :    yabai -m window --toggle float;\
-                                         yabai -m window --grid 4:4:1:1:2:2
+cmd + alt + ctrl - s                :    yabai -m window --toggle float --grid 5:6:2:1:2:3
 
 # Toggle sticky
 cmd + alt + ctrl - z                :    yabai -m window --toggle sticky
@@ -38,6 +40,12 @@ cmd + alt + ctrl - 0x21             :    yabai -m space --layout float
 
 # Entire desktop bsp
 cmd + alt + ctrl - 0x1E             :    yabai -m space --layout bsp
+
+# Small space in middle
+cmd + alt + ctrl - k                :    yabai -m space --padding abs:150:150:700:700
+
+# Big space
+cmd + alt + ctrl - l                :    yabai -m space --padding abs:10:10:10:10
 
 # Equalise windows
 cmd + alt + ctrl - e                :    yabai -m space --balance

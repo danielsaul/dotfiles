@@ -19,6 +19,18 @@ yabai -m config mouse_action2                resize
 yabai -m config window_topmost               on
 
 # float system preferences
-yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+
+systemApp='^(System Preferences|System Information|Finder|Calendar|Mail|App Store|Activity Monitor|Dictionary)$'
+
+manageOffApp='^(IINA|Stats|LICEcap)$'
+
+yabai -m rule --add app="${systemApp}|${manageOffApp}" manage=off
+
+yabai -m signal --add event=window_created \
+  action='yabai -m query --windows --window $YABAI_WINDOW_ID \
+  | jq -er ".\"can-resize\" or .\"is-floating\"" || \
+  yabai -m window $YABAI_WINDOW_ID --toggle float' \
+  app!="${systemApp}|${manageOffApp}"
 
 echo "yabai configuration loaded.."
