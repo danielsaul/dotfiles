@@ -2,6 +2,7 @@
   "Comment.nvim": { "branch": "master", "commit": "0236521ea582747b58869cb72f70ccfa967d2e89" },
   "animation.nvim": { "branch": "main", "commit": "fb77091ab72ec9971aee0562e7081182527aaa6a" },
   "dark-notify": { "branch": "master", "commit": "891adc07dd7b367b840f1e9875b075fd8af4dc52" },
+  "gitsigns.nvim": { "branch": "main", "commit": "2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae" },
   "indent-blankline.nvim": { "branch": "master", "commit": "821a7acd88587d966f7e464b0b3031dfe7f5680c" },
   "lazy.nvim": { "branch": "main", "commit": "aedcd79811d491b60d0a6577a9c1701063c2a609" },
   "lualine.nvim": { "branch": "master", "commit": "7d131a8d3ba5016229e8a1d08bf8782acea98852" },

@@ -40,7 +40,7 @@ vim.opt.scrolloff = 10           -- Show next n lines when scrolling
 vim.opt.sidescrolloff = 5        -- Show next n columns when side-scrolling
 vim.opt.wrap = false             -- Do not wrap lines
 
-vim.opt.signcolumn = "number"    -- Show signs in number column
+vim.opt.signcolumn = "auto:1-5"    -- Show signs in number column
 vim.opt.number = true            -- Show line numbers
 vim.opt.numberwidth = 4          -- Width of line number
 
