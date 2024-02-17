@@ -1,4 +1,5 @@
 
+
 " Project root - do not change automatically
 let g:rooter_manual_only = 1
 
@@ -40,8 +41,16 @@ augroup END
 " Indent Line
 set list lcs=tab:\▏\                    " Standard tab line
 let g:indentLine_char = '▏'             " Space line
-let g:indentLine_color_term = 236
-let g:indentLine_color_gui = '#2C2C2C'
+" let g:indentLine_color_term = 236
+if &background == 'dark'
+  let g:indentLine_color_gui = '#2E2E2E'
+else
+  let g:indentLine_color_gui = '#E6E6E6'
+endif
+
+lua << END
+require('dark_notify').run()
+END
 
 " Lualine
 lua << END

@@ -1,0 +1,14 @@
+name: 'neon'
+version: '1.0.0'
+license: 'MIT'
+author: 'Daniel Saul'
+url: ''
+description: ''
+colorschemes:
+  - name: 'neon'
+    background: 'dark'
+    palette: neon.vim
+airline:
+  - name: 'neon'
+    palette: neon.vim
+    style: 'neon'

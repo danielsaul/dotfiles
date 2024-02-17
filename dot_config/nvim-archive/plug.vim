@@ -4,6 +4,8 @@
 
 call plug#begin()
 
+Plug 'cormacrelf/dark-notify'
+
 Plug 'savq/melange-nvim'
 Plug 'rktjmp/lush.nvim'
 Plug 'mcchrish/zenbones.nvim'
@@ -78,6 +80,7 @@ Plug 'RRethy/vim-hexokinase', {'do': 'make hexokinase' }  " Colours
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 " Colour schemes
 " Plug 'crusoexia/vim-monokai'

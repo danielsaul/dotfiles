@@ -1,0 +1,82 @@
+# BASE UI
+ColorColumn: '- grey3'
+Conceal: ''
+Cursor: ''
+CursorIM: ''
+CursorColumn: '- grey5'
+CursorLine: '- grey5'
+CursorLineNr: 'lightgrey -'
+Directory: ''
+DiffAdd: 'dfgreen dgreen'
+DiffChange: 'dfblue dblue'
+DiffDelete: 'dfred dred'
+DiffText: ''
+ErrorMsg: 'redpink grey1 b'
+VertSplit: 'grey1 grey3'
+Folded: 'palepink grey2'
+FoldColumn: '- grey1'
+SignColumn: '- grey3'
+IncSearch: ''
+LineNr: 'grey6 -'
+MatchParen: 'purple grey1'
+ModeMsg: '- -'
+MoreMsg: 'midpink'
+NonText: 'grey6'
+Normal: 'lightgrey bg'
+PMenu: 'grey7 grey1'
+PMenuSel: 'lightgrey black'
+PmenuSbar: '- grey2'
+PmenuThumb: 'grey4'
+Question: 'midpink'
+Search: 'white redpink'
+SpecialKey: 'grey4'
+SpellBad: 'redpink'
+SpellLocal: ''
+SpellCap: ''
+SpellRare: ''
+StatusLine: ''
+StatusLineNC: ''
+TabLine: ''
+TabLineFill: ''
+TabLineSel: ''
+Title: ''
+Visual: '- grey5'
+VisualNOS: ''
+WarningMsg: 'lightyellow'
+WildMenu: ''
+# BASE SYNTAX
+Comment: 'browngrey'
+Constant: 'purplepink'
+String: 'stringyellow' # Constant
+Character: '' # Constant
+Boolean: '' # Constant
+Number: '' # Constant
+Float: '' # Constant
+Identifier: 'paleblue'
+Function: 'brightpink' # Identifier
+Statement: 'baseblue'
+Conditional: 'green' # Statement
+Repeat: 'pink' # Statement
+Label: '' # Statement
+Operator: '' # Statement
+Keyword: 'midpink' # Statement
+Exception: '' # Statement
+PreProc: 'darkblue'
+Include: '' # PreProc
+Define: '' # PreProc
+Macro: '' # PreProc
+PreCondit: '' # PreProc
+Type: 'brightblue'
+StorageClass: 'brightpink' # Type
+Structure: '' # Type
+Typedef: '' # Type
+Special: 'whitepink'
+SpecialChar: '' # Special
+Tag: '' # Special
+Delimiter: '' # Special
+SpecialComment: '' # Special
+Debug: '' # Special
+Underlined: ''
+Ignore: ''
+Error: 'redpink'
+Todo: 'orange'

@@ -24,6 +24,8 @@ let g:zenbones_darken_comments = 50
 let g:zenbones_transparent_background = v:true
 let g:zenwritten_italic_comments = v:false
 let g:zenwritten_transparent_background = v:true
+let g:zenwritten_lighten_line_nr = 25
+let g:zenwritten_darken_line_nr = 25
 
 source $HOME/.config/nvim/plug_telescope.vim
 
