@@ -61,3 +61,10 @@ vim.keymap.set("", "<C-up>", "<C-w><up>")
 vim.keymap.set("", "<C-down>", "<C-w><down>")
 vim.keymap.set("", "<C-right>", "<C-w><right>")
 vim.keymap.set("", "<C-left>", "<C-w><left>")
+
+-- Change Directory
+-- So that you navigate relative to the current file
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*",
+  command = "silent! lcd %:p:h"
+})

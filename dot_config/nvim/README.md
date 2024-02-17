@@ -4,5 +4,6 @@
 
 
 ### Colour scheme
-Currently using zenwritten, part of [zenbones](https://github.com/mcchrish/zenbones.nvim). This is a minimal, mostly monochrome colour scheme that uses contrast. I prefer this and find it less distracting - I want to read the code, not look at pretty colours.
-See also [A case against syntax highlighting](https://www.linusakesson.net/programming/syntaxhighlighting/)
+Currently using zenwritten, part of [zenbones](https://github.com/mcchrish/zenbones.nvim). This is a minimal, mostly monochrome colour scheme that uses contrast. I prefer this and find it less distracting - I want to read the code, not look at pretty colours. See also [A case against syntax highlighting](https://www.linusakesson.net/programming/syntaxhighlighting/)
+
+I use [dark-notify](https://github.com/cormacrelf/dark-notify) to automatically sync the colour theme with MacOS light/dark mode.

@@ -1,5 +1,8 @@
 {
+  "dark-notify": { "branch": "master", "commit": "891adc07dd7b367b840f1e9875b075fd8af4dc52" },
   "lazy.nvim": { "branch": "main", "commit": "aedcd79811d491b60d0a6577a9c1701063c2a609" },
+  "lualine.nvim": { "branch": "master", "commit": "7d131a8d3ba5016229e8a1d08bf8782acea98852" },
   "lush.nvim": { "branch": "main", "commit": "2e8d34e748642621d761a65e3c2a198154b914e8" },
+  "nvim-web-devicons": { "branch": "master", "commit": "7f30f2da3c3641841ceb0e2c150281f624445e8f" },
   "zenbones": { "branch": "main", "commit": "33672310aac6b823c88cf16d5d99472439111f9c" }
 }
