@@ -3,9 +3,10 @@
 HISTCONTROL=ignoredups:ignorespace
 
 # Customise Geometry Theme
-GEOMETRY_PROMPT=(geometry_newline geometry_echo geometry_path geometry_status)
-GEOMETRY_STATUS_SYMBOL="▶"
-GEOMETRY_STATUS_SYMBOL_ERROR="ᐅ"
+GEOMETRY_PROMPT=(geometry_echo geometry_status geometry_path geometry_git)
+GEOMETRY_RPROMPT=(geometry_exec_time geometry_git)
+GEOMETRY_STATUS_SYMBOL="▲"
+GEOMETRY_STATUS_SYMBOL_ERROR="△"
 GEOMETRY_PATH_COLOR="cyan"
 
 GEOMETRY_GIT_SYMBOL_DIRTY="✘"
@@ -50,12 +51,9 @@ zplug load
 export EDITOR="nvim"
 
 ## Other
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+eval "$(fnm env --use-on-cd)"
 
 # PATH
-export PATH="$(yarn global bin):$PATH"
+# export PATH="$(yarn global bin):$PATH"
 export PATH=$HOME/go/bin:$PATH
+

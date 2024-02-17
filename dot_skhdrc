@@ -42,7 +42,7 @@ cmd + alt + ctrl - 0x21             :    yabai -m space --layout float
 cmd + alt + ctrl - 0x1E             :    yabai -m space --layout bsp
 
 # Small space in middle
-cmd + alt + ctrl - k                :    yabai -m space --padding abs:150:150:700:700
+cmd + alt + ctrl - k                :    yabai -m space --padding abs:75:75:700:700
 
 # Big space
 cmd + alt + ctrl - l                :    yabai -m space --padding abs:10:10:10:10
