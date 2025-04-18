@@ -4,7 +4,7 @@ HISTCONTROL=ignoredups:ignorespace
 
 # Customise Geometry Theme
 GEOMETRY_PROMPT=(geometry_echo geometry_status geometry_path geometry_git)
-GEOMETRY_RPROMPT=(geometry_exec_time geometry_git)
+GEOMETRY_RPROMPT=(geometry_git)
 GEOMETRY_STATUS_SYMBOL="▲"
 GEOMETRY_STATUS_SYMBOL_ERROR="△"
 GEOMETRY_PATH_COLOR="cyan"
