@@ -3,7 +3,7 @@ return {
   dependencies = {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
-    'yhrsh7th/nvim-cmp',
+    'hrsh7th/nvim-cmp',
   },
   config = function()
     require('mason').setup()
@@ -24,6 +24,5 @@ return {
     lspconfig.gopls.setup({
       capabilities = capabilities
     })
-
   end
 }

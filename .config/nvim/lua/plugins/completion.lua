@@ -1,5 +1,5 @@
 return {
-  "yhrsh7th/nvim-cmp",
+  "hrsh7th/nvim-cmp",
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
@@ -31,7 +31,7 @@ return {
         -- { name = 'nvim_lsp_signature_help' },
         { name = "nvim_lsp" },
         { name = "path" },
-        { name = "buffer", keyword_length = 3 }
+        { name = "buffer",  keyword_length = 3 }
       },
 
       mapping = cmp.mapping.preset.insert({
@@ -54,7 +54,7 @@ return {
           maxwidth = 50,
           ellipsis_char = '...',
           show_labelDetails = true, -- show labelDetails in menu. Disabled by default
-          before = function (entry, vim_item)
+          before = function(entry, vim_item)
             return vim_item
           end
         })
