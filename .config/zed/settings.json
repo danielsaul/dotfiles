@@ -1,0 +1,81 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "show_edit_predictions": false,
+  "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "version": "2"
+  },
+  "edit_predictions": {
+    "mode": "eager",
+    "enabled_in_text_threads": false
+  },
+  "cursor_blink": false,
+  "scrollbar": { "show": "never" },
+  "scroll_beyond_last_line": "off",
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "vim_mode": true,
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "buffer_font_family": "Hasklig",
+  "ui_font_size": 16,
+  "buffer_font_size": 13.5,
+  "theme": {
+    "mode": "system",
+    "light": "Brook Code Light",
+    "dark": "Brook Code Dark"
+  },
+  // The number of lines to keep above/below the cursor when scrolling.
+  "vertical_scroll_margin": 10,
+  "gutter": {
+    "folds": false
+  },
+  //"max_tabs": 1
+  "tab_bar": {
+    "show": false
+  },
+  "active_pane_modifiers": {
+    // "magnification": 1.2
+  },
+  "file_finder": {
+    "modal_max_width": "medium"
+  },
+  "lsp": {
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "golangci-lint",
+          "run",
+          "--output.json.path=stdout",
+          "--issues-exit-code=1",
+          "--show-stats=false"
+        ]
+      }
+    }
+  },
+  "languages": {
+    "Go": {
+      "show_edit_predictions": true,
+      "language_servers": ["gopls", "golangci-lint"]
+    }
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  }
+}

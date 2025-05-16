@@ -1,0 +1,69 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "use_key_equivalents": true,
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-n": "project_panel::ToggleFocus", // ctrl-n instead of cmd-shift-e
+      "ctrl-/": "git_panel::ToggleFocus",
+      "ctrl-space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "ctrl-space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-n": "pane::RevealInProjectPanel" // ctrl-n instead of cmd-shift-e
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "ctrl-n": "workspace::ToggleLeftDock" // ctrl-n again closes project panel
+    }
+  },
+  {
+    "context": "GitPanel",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-/": "workspace::ToggleLeftDock" // ctrl-/ again closes git
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "space": "command_palette::Toggle" // Space instead of :
+    }
+  },
+  {
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "bindings": {
+      // ctrl-arrow to navigate panes
+      "ctrl-left": "workspace::ActivatePaneLeft",
+      "ctrl-right": "workspace::ActivatePaneRight",
+      "ctrl-up": "workspace::ActivatePaneUp",
+      "ctrl-down": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "FileFinder || (FileFinder > Picker > Editor) || (FileFinder > Picker > menu)",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-v": "pane::SplitRight"
+    }
+  }
+]
