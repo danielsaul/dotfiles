@@ -57,3 +57,6 @@ eval "$(fnm env --use-on-cd)"
 # export PATH="$(yarn global bin):$PATH"
 export PATH=$HOME/go/bin:$PATH
 
+if type mise &>/dev/null; then
+  eval "$(mise activate zsh)"
+fi
