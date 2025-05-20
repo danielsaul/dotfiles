@@ -22,7 +22,13 @@ return {
     })
 
     lspconfig.gopls.setup({
-      capabilities = capabilities
+      capabilities = capabilities,
+      settings = {
+        gopls = {
+          buildFlags = { "-tags=integration" }
+        }
+      }
+
     })
   end
 }
