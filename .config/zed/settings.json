@@ -52,7 +52,7 @@
     // "magnification": 1.2
   },
   "file_finder": {
-    "modal_max_width": "medium"
+    "modal_max_width": "small"
   },
   "lsp": {
     "golangci-lint": {

@@ -13,7 +13,8 @@
       // "shift shift": "file_finder::Toggle"
       "ctrl-n": "project_panel::ToggleFocus", // ctrl-n instead of cmd-shift-e
       "ctrl-/": "git_panel::ToggleFocus",
-      "ctrl-space": "file_finder::Toggle"
+      "ctrl-space": "file_finder::Toggle",
+      "alt-space": "tab_switcher::ToggleAll"
     }
   },
   {
@@ -50,7 +51,20 @@
     }
   },
   {
-    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "context": "ChangesList || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView || Welcome",
+    "bindings": {
+      "space": "command_palette::Toggle" // Space instead of :
+      // "g /": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space": "command_palette::Toggle" // Space instead of :
+    }
+  },
+  {
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView || Terminal || AgentPanel",
     "bindings": {
       // ctrl-arrow to navigate panes
       "ctrl-left": "workspace::ActivatePaneLeft",
