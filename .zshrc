@@ -35,8 +35,9 @@ zplug load
 
 ## Aliases
 
+alias ls='ls --color'
  # l for longform ls
- alias l='ls -lh'
+ alias l='ls -lA'
 
  # vi for neovim
  alias vi=nvim
