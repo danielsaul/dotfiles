@@ -33,4 +33,8 @@ yabai -m signal --add event=window_created \
   yabai -m window $YABAI_WINDOW_ID --toggle float' \
   app!="${systemApp}|${manageOffApp}"
 
+# Workaround for ghostty tabs
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
+
 echo "yabai configuration loaded.."
