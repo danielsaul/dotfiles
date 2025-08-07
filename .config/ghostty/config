@@ -26,6 +26,9 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = dark:zenwritten_dark,light:zenwritten_light
+#theme = zenwritten_dark
+background-opacity = 0.95
+background-blur = true
 
 font-family = "Hasklig"
 font-size = 13.5
@@ -42,8 +45,8 @@ macos-auto-secure-input
 
 macos-icon = holographic
 
-quick-terminal-position = center
-quick-terminal-animation-duration = 0
+quick-terminal-position = bottom
+quick-terminal-animation-duration = 0.1
 
 initial-window = false
 quit-after-last-window-closed = false
